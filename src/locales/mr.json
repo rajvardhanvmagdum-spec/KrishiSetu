@@ -1,0 +1,145 @@
+{
+  "appName": "KrishiSetu",
+  "appTagline": "स्मार्ट मार्केट लिंकेज",
+  "appFullTagline": "शेतकऱ्यांचे कष्ट, योग्य दराची हमी",
+  "subTagline": "उत्तम नफा. योग्य बाजार समिती निवड.",
+  
+  "nav": {
+    "home": "मुख्यपृष्ठ",
+    "marketAnalysis": "मार्केट विश्लेषण",
+    "mandiDetails": "बाजार समिती तपशील",
+    "back": "मागे",
+    "next": "पुढे जा"
+  },
+  
+  "language": {
+    "title": "भाषा निवडा",
+    "subtitle": "आपली पसंतीची भाषा निवडा",
+    "hi": "हिंदी",
+    "en": "English",
+    "mr": "मराठी",
+    "gu": "ગુજરાતી",
+    "te": "తెలుగు"
+  },
+  
+  "userType": {
+    "title": "तुम्ही कोण आहात?",
+    "subtitle": "कृपया तुमची भूमिका निवडा",
+    "farmer": "शेतकरी",
+    "farmerEn": "Farmer",
+    "buyer": "Buyer / Wholesaler / Retailer",
+    "buyerSub": "खरेदीदार / व्यापारी / किरकोळ विक्रेता",
+    "comingSoonTitle": "खरेदीदार प्लॅटफॉर्म लवकरच येत आहे!",
+    "comingSoonDesc": "सध्या आम्ही शेतकऱ्यांसाठी सर्वोत्तम बाजारपेठ शोधण्यावर लक्ष केंद्रित करत आहोत."
+  },
+  
+  "auth": {
+    "mobileTitle": "मोबाईल नंबर प्रविष्ट करा",
+    "mobileSubtitle": "आम्ही आपल्याला OTP पाठवू",
+    "mobilePlaceholder": "98765 43210",
+    "sendOtp": "OTP पाठवा",
+    "termsNotice": "पुढे जाऊन आपण आमच्या गोपनीयता धोरण आणि अटींना संमती देता",
+    "otpTitle": "OTP प्रविष्ट करा",
+    "otpSubtitle": "आम्ही +91 {{phone}} वर OTP पाठवला आहे",
+    "resendTimer": "{{seconds}} सेकंदात पुन्हा पाठवा",
+    "resendNow": "पुन्हा OTP पाठवा",
+    "otpVerified": "OTP पडताळणी झाली",
+    "proceed": "पुढे जा"
+  },
+  
+  "location": {
+    "permissionTitle": "स्थानाची परवानगी द्या",
+    "permissionSubtitle": "आम्ही आपल्या जवळील सर्वोत्तम बाजारपेठा शोधू",
+    "allow": "होय, परवानगी द्या",
+    "later": "नाही, नंतर",
+    "selectRegion": "आपला विभाग निवडा",
+    "selectRegionSub": "बाजारपेठ शोधण्यासाठी ही माहिती वापरली जाईल",
+    "state": "राज्य",
+    "district": "जिल्हा",
+    "radius": "शोधाचा परीघ (Radius)",
+    "saveArea": "जतन करा",
+    "km": "किमी",
+    "kmRadius": "किमी परीघ"
+  },
+  
+  "home": {
+    "heroTitle": "आपले पीक निवडा",
+    "heroSubtitle": "उत्तम दर मिळवा, अधिक कमवा",
+    "farmerPill": "शेतकरी (Farmer)",
+    "buyerPill": "खरेदीदार (Buyer/Wholesaler/Retailer)",
+    "chooseCrop": "पीक निवडा",
+    "swipeHint": "डावीकडे किंवा उजवीकडे स्वाइप करा",
+    "chooseQuantity": "प्रमाण निवडा",
+    "quantityQuestion": "आपण किती प्रमाण विकू इच्छिता?",
+    "unitLabel": "एकक",
+    "unitQuintal": "क्विंटल (Quintal)",
+    "unitKg": "किलो (Kg)",
+    "unitTon": "टन (Ton)",
+    "ctaAnalysis": "AI मार्केट विश्लेषण करा",
+    "infoStrip": "AI आधारित विश्लेषणाने शोधा सर्वोत्तम बाजार समिती आणि मिळवा अधिक नफा",
+    "locationBar": "स्थान व परीघ बदला"
+  },
+  
+  "crops": {
+    "tomato": "टोमॅटो",
+    "onion": "कांदा",
+    "potato": "बटाटा",
+    "brinjal": "वांगी",
+    "chilli": "हिरवी मिरची",
+    "cucumber": "काकडी",
+    "other": "इतर"
+  },
+  
+  "analysis": {
+    "title": "AI मार्केट विश्लेषण",
+    "bestOption": "सर्वोत्तम पर्याय",
+    "distance": "अंतर",
+    "rate": "दर (₹/kg)",
+    "totalQty": "एकूण प्रमाण",
+    "grossValue": "एकूण मूल्य (Gross)",
+    "transportCost": "वाहतूक खर्च",
+    "netReturn": "NET RETURN (तुमची कमाई)",
+    "selectThisMandi": "ही बाजार समिती निवडा",
+    "howCalculated": "हिशोब कसा केला गेला?",
+    "whyBest": "हा सर्वोत्तम पर्याय का आहे?",
+    "ratePerKgLabel": "दर (₹/kg)",
+    "qtyKgLabel": "प्रमाण (kg)",
+    "grossValueLabel": "एकूण मूल्य",
+    "transportCostLabel": "वाहतूक खर्च",
+    "netReturnLabel": "Net Return",
+    "otherMandis": "इतर जवळील बाजार समित्या",
+    "otherMandisCount": "{{count}} इतर जवळील बाजार समित्या",
+    "seeMoreMandis": "आणखी बाजार समित्या पहा",
+    "chooseMandi": "निवडा",
+    "selected": "निवडलेले"
+  },
+  
+  "steps": {
+    "nextStepTitle": "पुढील पायरी",
+    "step1": "बाजार समिती निवडा",
+    "step2": "वाहतुकीची व्यवस्था करा",
+    "step3": "बाजार समितीत विका",
+    "step4": "पैसे मिळवा",
+    "quote": "योग्य माहिती, योग्य निर्णय = जास्त नफा, समृद्ध शेतकरी!"
+  },
+  
+  "details": {
+    "title": "बाजार समिती सखोल विश्लेषण",
+    "financialBreakdown": "सविस्तर खर्च आणि नफा तपशील",
+    "mandiPrice": "बाजार भाव",
+    "grossRevenue": "एकूण उत्पन्न (Gross)",
+    "itemizedCosts": "विक्री खर्च तपशील",
+    "labourCost": "हमाली / मजुरी",
+    "mandiFee": "सेस / बाजार समिती कर",
+    "packaging": "पॅकिंग व पोती खर्च",
+    "wastage": "अंदाजे नुकसान / घट",
+    "storage": "साठवणूक खर्च",
+    "totalCost": "एकूण खर्च",
+    "netProfit": "निव्वळ नफा (Net Return)",
+    "timings": "बाजार वेळ",
+    "verifiedTraders": "सत्यापित आडते व खरेदीदार",
+    "contactTrader": "व्यापाऱ्याशी संपर्क साधा",
+    "getDirections": "दिशा मिळवा (GPS)",
+    "bookTransport": "वाहतूक गाडी बुक करा"
+  }
+}

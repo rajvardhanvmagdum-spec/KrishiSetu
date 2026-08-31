@@ -1,0 +1,145 @@
+{
+  "appName": "KrishiSetu",
+  "appTagline": "స్మార్ట్ మార్కెట్ లింకేజ్",
+  "appFullTagline": "రైతు కష్టం, సరైన ధరకు హామీ",
+  "subTagline": "మంచి లాభం. తెలివైన మార్కెట్ ఎంపిక.",
+  
+  "nav": {
+    "home": "హోమ్",
+    "marketAnalysis": "మార్కెట్ విశ్లేషణ",
+    "mandiDetails": "మార్కెట్ వివరాలు",
+    "back": "వెనుకకు",
+    "next": "ముందుకు సాగండి"
+  },
+  
+  "language": {
+    "title": "భాషను ఎంచుకోండి",
+    "subtitle": "మీకు నచ్చిన భాషను ఎంచుకోండి",
+    "hi": "हिंदी",
+    "en": "English",
+    "mr": "मराठी",
+    "gu": "ગુજરાતી",
+    "te": "తెలుగు"
+  },
+  
+  "userType": {
+    "title": "మీరు ఎవరు?",
+    "subtitle": "దయచేసి మీ పాత్రను ఎంచుకోండి",
+    "farmer": "రైతు",
+    "farmerEn": "Farmer",
+    "buyer": "Buyer / Wholesaler / Retailer",
+    "buyerSub": "కొనుగోలుదారు / హోల్‌సేలర్ / రిటైలర్",
+    "comingSoonTitle": "కొనుగోలుదారుల ప్లాట్‌ఫారమ్ త్వరలో రాబోతోంది!",
+    "comingSoonDesc": "మేము ప్రస్తుతం రైతులకు అత్యుత్తమ మార్కెట్ లింకేజ్ అందించడంపై దృష్టి పెడుతున్నాము."
+  },
+  
+  "auth": {
+    "mobileTitle": "మొబైల్ నంబర్ నమోదు చేయండి",
+    "mobileSubtitle": "మేము మీకు OTP పంపుతాము",
+    "mobilePlaceholder": "98765 43210",
+    "sendOtp": "OTP పంపండి",
+    "termsNotice": "ముందుకు సాగడం ద్వారా మీరు మా గోప్యతా విధానం & నిబంధనలను అంగీకరిస్తున్నారు",
+    "otpTitle": "OTP నమోదు చేయండి",
+    "otpSubtitle": "మేము +91 {{phone}} కు OTP పంపాము",
+    "resendTimer": "{{seconds}} సెకన్లలో మళ్లీ పంపండి",
+    "resendNow": "మళ్లీ OTP పంపండి",
+    "otpVerified": "OTP ధృవీకరించబడింది",
+    "proceed": "ముందుకు సాగండి"
+  },
+  
+  "location": {
+    "permissionTitle": "లొకేషన్ అనుమతి ఇవ్వండి",
+    "permissionSubtitle": "మేము మీ ప్రాంతానికి సమీపంలో ఉన్న ఉత్తమ మార్కెట్లను చూపుతాము",
+    "allow": "అవును, అనుమతించండి",
+    "later": "వద్దు, తర్వాత",
+    "selectRegion": "మీ ప్రాంతాన్ని ఎంచుకోండి",
+    "selectRegionSub": "మార్కెట్లను కనుగొనడానికి ఈ సమాచారం ఉపయోగించబడుతుంది",
+    "state": "రాష్ట్రం",
+    "district": "జిల్లా",
+    "radius": "శోధన పరిధి (Radius)",
+    "saveArea": "సేవ్ చేయండి",
+    "km": "కి.మీ",
+    "kmRadius": "కి.మీ పరిధి"
+  },
+  
+  "home": {
+    "heroTitle": "మీ పంటను ఎంచుకోండి",
+    "heroSubtitle": "మంచి ధర పొందండి, ఎక్కువ సంపాదించండి",
+    "farmerPill": "రైతు (Farmer)",
+    "buyerPill": "కొనుగోలుదారు (Buyer/Wholesaler/Retailer)",
+    "chooseCrop": "పంటను ఎంచుకోండి",
+    "swipeHint": "ఎడమ లేదా కుడికి స్వైప్ చేయండి",
+    "chooseQuantity": "పరిమాణాన్ని ఎంచుకోండి",
+    "quantityQuestion": "మీరు ఎంత పరిమాణం విక్రయించాలనుకుంటున్నారు?",
+    "unitLabel": "యూనిట్",
+    "unitQuintal": "క్వింటాల్ (Quintal)",
+    "unitKg": "కిలో (Kg)",
+    "unitTon": "టన్ను (Ton)",
+    "ctaAnalysis": "AI మార్కెట్ విశ్లేషణ చేయండి",
+    "infoStrip": "AI విశ్లేషణ ద్వారా ఉత్తమ మార్కెట్ కనుగొని గరిష్ట లాభం పొందండి",
+    "locationBar": "లొకేషన్ & పరిధిని మార్చండి"
+  },
+  
+  "crops": {
+    "tomato": "టమోటా",
+    "onion": "ఉల్లిపాయ",
+    "potato": "బంగాళాదుంప",
+    "brinjal": "వంకాయ",
+    "chilli": "పచ్చిమిర్చి",
+    "cucumber": "కీరదోస",
+    "other": "ఇతర"
+  },
+  
+  "analysis": {
+    "title": "AI మార్కెట్ విశ్లేషణ",
+    "bestOption": "ఉత్తమ ఎంపిక",
+    "distance": "దూరం",
+    "rate": "ధర (₹/kg)",
+    "totalQty": "మొత్తం పరిమాణం",
+    "grossValue": "మొత్తం విలువ (Gross)",
+    "transportCost": "రవాణా ఖర్చు",
+    "netReturn": "NET RETURN (మీ సంపాదన)",
+    "selectThisMandi": "ఈ మార్కెట్‌ను ఎంచుకోండి",
+    "howCalculated": "లెక్క ఎలా చేయబడింది?",
+    "whyBest": "ఇది ఎందుకు ఉత్తమ ఎంపిక?",
+    "ratePerKgLabel": "ధర (₹/kg)",
+    "qtyKgLabel": "పరిమాణం (kg)",
+    "grossValueLabel": "మొత్తం విలువ",
+    "transportCostLabel": "రవాణా ఖర్చు",
+    "netReturnLabel": "Net Return",
+    "otherMandis": "ఇతర సమీప మార్కెట్లు",
+    "otherMandisCount": "{{count}} ఇతర సమీప మార్కెట్లు",
+    "seeMoreMandis": "మరిన్ని మార్కెట్లను చూడండి",
+    "chooseMandi": "ఎంచుకోండి",
+    "selected": "ఎంచుకోబడింది"
+  },
+  
+  "steps": {
+    "nextStepTitle": "తదుపరి దశ",
+    "step1": "మార్కెట్ ఎంచుకోండి",
+    "step2": "రవాణా ఏర్పాటు చేయండి",
+    "step3": "మార్కెట్లో విక్రయించండి",
+    "step4": "చెల్లింపు పొందండి",
+    "quote": "సరైన సమాచారం, సరైన నిర్ణయం = ఎక్కువ లాభం, సంతోషకరమైన రైతు!"
+  },
+  
+  "details": {
+    "title": "మార్కెట్ సమగ్ర విశ్లేషణ",
+    "financialBreakdown": "వివరణాత్మక వ్యయం మరియు లాభ వివరాలు",
+    "mandiPrice": "మార్కెట్ ధర",
+    "grossRevenue": "స్థూల రాబడి (Gross Revenue)",
+    "itemizedCosts": "అమ్మకపు ఖర్చుల వివరాలు",
+    "labourCost": "కూలీ / హమాలీ ఖర్చు",
+    "mandiFee": "మార్కెట్ ఫీజు / సెస్",
+    "packaging": "ప్యాకింగ్ ఖర్చు",
+    "wastage": "అంచనా నష్టం / తగ్గుదల",
+    "storage": "నిల్వ ఖర్చు",
+    "totalCost": "మొత్తం అంచనా వ్యయం",
+    "netProfit": "నికర లాభం (Net Return)",
+    "timings": "మార్కెట్ సమయాలు",
+    "verifiedTraders": "ధృవీకరించబడిన వ్యాపారులు",
+    "contactTrader": "వ్యాపారితో మాట్లాడండి",
+    "getDirections": "దారి కనుగొనండి (GPS)",
+    "bookTransport": "వాహనం బుక్ చేసుకోండి"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "appName": "KrishiSetu",
+  "appTagline": "સ્માર્ટ માર્કેટ લિંકેજ",
+  "appFullTagline": "ખેડૂતની મહેનત, સાચા ભાવની ગેરંટી",
+  "subTagline": "વધુ નફો. સ્માર્ટ માર્કેટિંગ.",
+  
+  "nav": {
+    "home": "હોમ",
+    "marketAnalysis": "માર્કેટ એનાલિસિસ",
+    "mandiDetails": "માર્કેટ વિગતો",
+    "back": "પાછા જાઓ",
+    "next": "આગળ વધો"
+  },
+  
+  "language": {
+    "title": "ભાષા પસંદ કરો",
+    "subtitle": "તમારી પસંદગીની ભાષા પસંદ કરો",
+    "hi": "हिंदी",
+    "en": "English",
+    "mr": "मराठी",
+    "gu": "ગુજરાતી",
+    "te": "తెలుగు"
+  },
+  
+  "userType": {
+    "title": "તમે કોણ છો?",
+    "subtitle": "કૃપા કરીને તમારી ભૂમિકા પસંદ કરો",
+    "farmer": "ખેડૂત",
+    "farmerEn": "Farmer",
+    "buyer": "Buyer / Wholesaler / Retailer",
+    "buyerSub": "વેપારી / જથ્થાબંધ / છૂટક વેપારી",
+    "comingSoonTitle": "ખરીદનાર પ્લેટફોર્મ ટૂંક સમયમાં આવી રહ્યું છે!",
+    "comingSoonDesc": "અમે અત્યારે ખેડૂતો માટે શ્રેષ્ઠ માર્કેટ લિંકેજ પર ધ્યાન કેન્દ્રિત કર્યું છે."
+  },
+  
+  "auth": {
+    "mobileTitle": "મોબાઇલ નંબર દાખલ કરો",
+    "mobileSubtitle": "અમે તમને OTP મોકલીશું",
+    "mobilePlaceholder": "98765 43210",
+    "sendOtp": "OTP મોકલો",
+    "termsNotice": "આગળ વધીને તમે અમારી ગોપનીયતા નીતિ અને શરતો સાથે સંમત થાઓ છો",
+    "otpTitle": "OTP દાખલ કરો",
+    "otpSubtitle": "અમે +91 {{phone}} પર OTP મોકલ્યો છે",
+    "resendTimer": "{{seconds}} સેકન્ડમાં ફરીથી મોકલો",
+    "resendNow": "ફરીથી OTP મોકલો",
+    "otpVerified": "OTP ચકાસાયેલ છે",
+    "proceed": "આગળ વધો"
+  },
+  
+  "location": {
+    "permissionTitle": "સ્થાન પરવાનગી આપો",
+    "permissionSubtitle": "અમે તમારા વિસ્તાર મુજબ શ્રેષ્ઠ બજારો બતાવીશું",
+    "allow": "હા, પરવાનગી આપો",
+    "later": "ના, પછીથી",
+    "selectRegion": "તમારો વિસ્તાર પસંદ કરો",
+    "selectRegionSub": "બજાર શોધવા માટે આ માહિતીનો ઉપયોગ થશે",
+    "state": "રાજ્ય",
+    "district": "જિલ્લો",
+    "radius": "શોધ ક્ષેત્ર (Radius)",
+    "saveArea": "સાચવો",
+    "km": "km",
+    "kmRadius": "કિમી ત્રિજ્યા"
+  },
+  
+  "home": {
+    "heroTitle": "તમારો પાક પસંદ કરો",
+    "heroSubtitle": "શ્રેષ્ઠ ભાવ મેળવો, વધુ કમાઓ",
+    "farmerPill": "ખેડૂત (Farmer)",
+    "buyerPill": "ખરીદનાર (Buyer/Wholesaler/Retailer)",
+    "chooseCrop": "પાક પસંદ કરો",
+    "swipeHint": "ડાબે કે જમણે સ્વાઇપ કરો",
+    "chooseQuantity": "જથ્થો પસંદ કરો",
+    "quantityQuestion": "તમે કેટલો જથ્થો વેચવા માંગો છો?",
+    "unitLabel": "એકમ",
+    "unitQuintal": "ક્વિન્ટલ (Quintal)",
+    "unitKg": "કિલો (Kg)",
+    "unitTon": "ટન (Ton)",
+    "ctaAnalysis": "AI માર્કેટ એનાલિસિસ કરો",
+    "infoStrip": "AI વિશ્લેષણથી શ્રેષ્ઠ મંડી શોધો અને વધુ નફો મેળવો",
+    "locationBar": "સ્થાન અને ત્રિજ્યા બદલો"
+  },
+  
+  "crops": {
+    "tomato": "ટામેટાં",
+    "onion": "ડુંગળી",
+    "potato": "બટાકા",
+    "brinjal": "રીંગણા",
+    "chilli": "લીલા મરચાં",
+    "cucumber": "કાકડી",
+    "other": "અન્ય"
+  },
+  
+  "analysis": {
+    "title": "AI માર્કેટ એનાલિસિસ",
+    "bestOption": "શ્રેષ્ઠ વિકલ્પ",
+    "distance": "અંતર",
+    "rate": "ભાવ (₹/kg)",
+    "totalQty": "કુલ જથ્થો",
+    "grossValue": "કુલ મૂલ્ય (Gross)",
+    "transportCost": "પરિવહન ખર્ચ",
+    "netReturn": "NET RETURN (તમારી કમાણી)",
+    "selectThisMandi": "આ માર્કેટ પસંદ કરો",
+    "howCalculated": "ગણતરી કેવી રીતે થઈ?",
+    "whyBest": "આ શ્રેષ્ઠ કેમ છે?",
+    "ratePerKgLabel": "ભાવ (₹/kg)",
+    "qtyKgLabel": "જથ્થો (kg)",
+    "grossValueLabel": "કુલ મૂલ્ય",
+    "transportCostLabel": "પરિવહન ખર્ચ",
+    "netReturnLabel": "Net Return",
+    "otherMandis": "અન્ય નજીકની મંડીઓ",
+    "otherMandisCount": "{{count}} અન્ય નજીકની મંડીઓ",
+    "seeMoreMandis": "વધુ મંડીઓ જુઓ",
+    "chooseMandi": "પસંદ કરો",
+    "selected": "પસંદ કરેલ"
+  },
+  
+  "steps": {
+    "nextStepTitle": "આગળનું પગલું",
+    "step1": "મંડી પસંદ કરો",
+    "step2": "પરિવહન વ્યવસ્થા કરો",
+    "step3": "મંડીમાં વેચો",
+    "step4": "ચુકવણી મેળવો",
+    "quote": "સાચી માહિતી, સાચો નિર્ણય = વધુ નફો, સુખી ખેડૂત!"
+  },
+  
+  "details": {
+    "title": "મંડી ઊંડાણપૂર્વક વિશ્લેષણ",
+    "financialBreakdown": "ખર્ચ અને નફાની વિગત",
+    "mandiPrice": "મંડી ભાવ",
+    "grossRevenue": "કુલ આવક (Gross)",
+    "itemizedCosts": "વેચાણ ખર્ચ વિગતો",
+    "labourCost": "મજૂરી / હમાલી",
+    "mandiFee": "મંડી ટેક્સ",
+    "packaging": "પેકિંગ ખર્ચ",
+    "wastage": "અંદાજિત બગાડ",
+    "storage": "સંગ્રહ ખર્ચ",
+    "totalCost": "કુલ અંદાજિત ખર્ચ",
+    "netProfit": "ચોખ્ખો નફો (Net Return)",
+    "timings": "બજાર સમય",
+    "verifiedTraders": "ચકાસાયેલ વેપારીઓ",
+    "contactTrader": "વેપારીનો સંપર્ક કરો",
+    "getDirections": "નકશો જુઓ (GPS)",
+    "bookTransport": "વાહન બુક કરો"
+  }
+}

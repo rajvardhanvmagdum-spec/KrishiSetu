@@ -1,0 +1,145 @@
+{
+  "appName": "KrishiSetu",
+  "appTagline": "Smart Market Linkage",
+  "appFullTagline": "किसान की मेहनत, सही दाम की गारंटी",
+  "subTagline": "Better Returns. Smarter Mandi Choices.",
+  
+  "nav": {
+    "home": "होम",
+    "marketAnalysis": "मार्केट एनालिसिस",
+    "mandiDetails": "मंडी विवरण",
+    "back": "वापस",
+    "next": "आगे बढ़ें"
+  },
+  
+  "language": {
+    "title": "भाषा चुनें",
+    "subtitle": "अपनी भाषा चयन करें",
+    "hi": "हिंदी",
+    "en": "English",
+    "mr": "मराठी",
+    "gu": "ગુજરાતી",
+    "te": "తెలుగు"
+  },
+  
+  "userType": {
+    "title": "आप कौन हैं?",
+    "subtitle": "कृपया अपनी भूमिका चुनें",
+    "farmer": "किसान",
+    "farmerEn": "Farmer",
+    "buyer": "Buyer / Wholesaler / Retailer",
+    "buyerSub": "खरीदार / होलसेलर / रिटेलर",
+    "comingSoonTitle": "खरीदार प्लेटफॉर्म जल्द आ रहा है!",
+    "comingSoonDesc": "हम अभी किसानों के लिए बेहतर मंडी लिंकेज पर केंद्रित हैं। खरीदार मॉड्यूल जल्द उपलब्ध होगा।"
+  },
+  
+  "auth": {
+    "mobileTitle": "मोबाइल नंबर दर्ज करें",
+    "mobileSubtitle": "हम आपको OTP भेजेंगे",
+    "mobilePlaceholder": "98765 43210",
+    "sendOtp": "OTP भेजें",
+    "termsNotice": "आगे बढ़ने पर आप हमारी Privacy Policy और Terms को स्वीकार करते हैं",
+    "otpTitle": "OTP दर्ज करें",
+    "otpSubtitle": "हमने +91 {{phone}} पर OTP भेजा है",
+    "resendTimer": "{{seconds}} सेकंड में पुनः भेजें",
+    "resendNow": "पुनः OTP भेजें",
+    "otpVerified": "OTP सत्यापित",
+    "proceed": "आगे बढ़ें"
+  },
+  
+  "location": {
+    "permissionTitle": "स्थान की अनुमति दें",
+    "permissionSubtitle": "हम आपके क्षेत्र के अनुसार सबसे अच्छे बाज़ार दिखाएंगे",
+    "allow": "हाँ, अनुमति दें",
+    "later": "नहीं, बाद में",
+    "selectRegion": "अपना क्षेत्र चुनें",
+    "selectRegionSub": "यह जानकारी आप बाज़ार खोजने के लिए उपयोग करेंगे",
+    "state": "राज्य",
+    "district": "जिला",
+    "radius": "खोज का दायरा (Radius)",
+    "saveArea": "सेव करें",
+    "km": "km",
+    "kmRadius": "किमी दायरा"
+  },
+  
+  "home": {
+    "heroTitle": "अपनी फसल चुनें",
+    "heroSubtitle": "बेहतर भाव खोजें, अधिक कमाएँ",
+    "farmerPill": "किसान (Farmer)",
+    "buyerPill": "खरीदार (Buyer/Wholesaler/Retailer)",
+    "chooseCrop": "फसल चुनें",
+    "swipeHint": "बाएं या दाएं स्वाइप करें",
+    "chooseQuantity": "मात्रा चुनें",
+    "quantityQuestion": "आप कितनी मात्रा बेचना चाहते हैं?",
+    "unitLabel": "यूनिट",
+    "unitQuintal": "क्विंटल (Quintal)",
+    "unitKg": "किलो (Kg)",
+    "unitTon": "टन (Ton)",
+    "ctaAnalysis": "AI मार्केट एनालिसिस करें",
+    "infoStrip": "AI आधारित विश्लेषण से पाएं सर्वोत्तम मंडी और अधिक लाभ",
+    "locationBar": "स्थान व दायरा बदलें"
+  },
+  
+  "crops": {
+    "tomato": "टमाटर",
+    "onion": "प्याज",
+    "potato": "आलू",
+    "brinjal": "बैंगन",
+    "chilli": "मिर्च",
+    "cucumber": "खीरा",
+    "other": "अन्य"
+  },
+  
+  "analysis": {
+    "title": "AI मार्केट एनालिसिस",
+    "bestOption": "सबसे अच्छा विकल्प",
+    "distance": "दूरी",
+    "rate": "रेट (₹/kg)",
+    "totalQty": "कुल मात्रा",
+    "grossValue": "कुल मूल्य (Gross)",
+    "transportCost": "परिवहन लागत",
+    "netReturn": "NET RETURN (आपकी कमाई)",
+    "selectThisMandi": "इस मंडी को चुनें",
+    "howCalculated": "हिसाब कैसे किया गया?",
+    "whyBest": "क्यों यह सबसे अच्छा है?",
+    "ratePerKgLabel": "रेट (₹/kg)",
+    "qtyKgLabel": "मात्रा (kg)",
+    "grossValueLabel": "कुल मूल्य",
+    "transportCostLabel": "परिवहन लागत",
+    "netReturnLabel": "Net Return",
+    "otherMandis": "अन्य नजदीकी मंडियां",
+    "otherMandisCount": "{{count}} अन्य नजदीकी मंडियां",
+    "seeMoreMandis": "और मंडियां देखें",
+    "chooseMandi": "चुनें",
+    "selected": "चयनित"
+  },
+  
+  "steps": {
+    "nextStepTitle": "अगला कदम",
+    "step1": "मंडी चुनें",
+    "step2": "परिवहन की व्यवस्था करें",
+    "step3": "मंडी पर बेचें",
+    "step4": "पेमेंट प्राप्त करें",
+    "quote": "सही जानकारी, सही फैसला = अधिक लाभ, खुशहाल किसान!"
+  },
+  
+  "details": {
+    "title": "मंडी विस्तृत विश्लेषण",
+    "financialBreakdown": "विस्तृत लागत और मुनाफा विवरण",
+    "mandiPrice": "मंडी भाव",
+    "grossRevenue": "सकल राजस्व (Gross Revenue)",
+    "itemizedCosts": "विक्रय लागत विवरण (Selling Costs)",
+    "labourCost": "हमाली / मजदूरी",
+    "mandiFee": "मंडी टैक्स / सेस",
+    "packaging": "पैकेजिंग और बारदाना",
+    "wastage": "अनुमानित छंटाई / नुकसान",
+    "storage": "मंडी भंडारण शुल्क",
+    "totalCost": "कुल अनुमानित लागत",
+    "netProfit": "शुद्ध लाभ (Net Return)",
+    "timings": "मंडी संचालन समय",
+    "verifiedTraders": "सत्यापित आढ़ती व खरीदार",
+    "contactTrader": "व्यापारी से संपर्क करें",
+    "getDirections": "रास्ता देखें (GPS)",
+    "bookTransport": "सस्ता वाहन बुक करें"
+  }
+}

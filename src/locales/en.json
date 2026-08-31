@@ -1,0 +1,145 @@
+{
+  "appName": "KrishiSetu",
+  "appTagline": "Smart Market Linkage",
+  "appFullTagline": "Farmer's Hard Work, Guaranteed Best Returns",
+  "subTagline": "Better Returns. Smarter Mandi Choices.",
+  
+  "nav": {
+    "home": "Home",
+    "marketAnalysis": "Market Analysis",
+    "mandiDetails": "Mandi Details",
+    "back": "Back",
+    "next": "Proceed"
+  },
+  
+  "language": {
+    "title": "Select Language",
+    "subtitle": "Choose your preferred language",
+    "hi": "हिंदी",
+    "en": "English",
+    "mr": "मराठी",
+    "gu": "ગુજરાતી",
+    "te": "తెలుగు"
+  },
+  
+  "userType": {
+    "title": "Who Are You?",
+    "subtitle": "Please select your primary role",
+    "farmer": "Farmer",
+    "farmerEn": "Farmer",
+    "buyer": "Buyer / Wholesaler / Retailer",
+    "buyerSub": "Trader / Wholesaler / Retailer",
+    "comingSoonTitle": "Buyer Platform Coming Soon!",
+    "comingSoonDesc": "We are currently focused on providing the best market linkage intelligence for farmers. Buyer module is launching soon."
+  },
+  
+  "auth": {
+    "mobileTitle": "Enter Mobile Number",
+    "mobileSubtitle": "We will send an OTP verification code",
+    "mobilePlaceholder": "98765 43210",
+    "sendOtp": "Send OTP",
+    "termsNotice": "By continuing, you agree to our Privacy Policy & Terms of Service",
+    "otpTitle": "Enter OTP",
+    "otpSubtitle": "We sent an OTP to +91 {{phone}}",
+    "resendTimer": "Resend in {{seconds}}s",
+    "resendNow": "Resend OTP",
+    "otpVerified": "OTP Verified",
+    "proceed": "Proceed"
+  },
+  
+  "location": {
+    "permissionTitle": "Enable Location Access",
+    "permissionSubtitle": "We will show the best and most profitable mandis near you",
+    "allow": "Yes, Allow Location",
+    "later": "No, Maybe Later",
+    "selectRegion": "Select Your Region",
+    "selectRegionSub": "Used to discover and calculate nearby mandi logistics",
+    "state": "State",
+    "district": "District",
+    "radius": "Search Radius",
+    "saveArea": "Save & Continue",
+    "km": "km",
+    "kmRadius": "km radius"
+  },
+  
+  "home": {
+    "heroTitle": "Choose Your Crop",
+    "heroSubtitle": "Find Better Prices, Earn More Profit",
+    "farmerPill": "किसान (Farmer)",
+    "buyerPill": "खरीदार (Buyer/Wholesaler/Retailer)",
+    "chooseCrop": "Choose Crop",
+    "swipeHint": "Swipe left or right",
+    "chooseQuantity": "Choose Quantity",
+    "quantityQuestion": "How much quantity do you want to sell?",
+    "unitLabel": "Unit",
+    "unitQuintal": "Quintal (क्विंटल)",
+    "unitKg": "Kilogram (Kg)",
+    "unitTon": "Metric Ton (टन)",
+    "ctaAnalysis": "Run AI Market Analysis",
+    "infoStrip": "AI-driven analysis helps you find the best mandi & maximize profit",
+    "locationBar": "Change Location & Radius"
+  },
+  
+  "crops": {
+    "tomato": "Tomato",
+    "onion": "Onion",
+    "potato": "Potato",
+    "brinjal": "Brinjal",
+    "chilli": "Green Chilli",
+    "cucumber": "Cucumber",
+    "other": "Other"
+  },
+  
+  "analysis": {
+    "title": "AI Market Analysis",
+    "bestOption": "Best Recommendation",
+    "distance": "Distance",
+    "rate": "Rate (₹/kg)",
+    "totalQty": "Total Quantity",
+    "grossValue": "Gross Revenue",
+    "transportCost": "Transport Cost",
+    "netReturn": "NET RETURN (Your Earnings)",
+    "selectThisMandi": "Choose This Mandi",
+    "howCalculated": "How was this calculated?",
+    "whyBest": "Why is this the best choice?",
+    "ratePerKgLabel": "Rate (₹/kg)",
+    "qtyKgLabel": "Quantity (kg)",
+    "grossValueLabel": "Gross Value",
+    "transportCostLabel": "Transport Cost",
+    "netReturnLabel": "Net Return",
+    "otherMandis": "Other Nearby Mandis",
+    "otherMandisCount": "{{count}} Other Nearby Mandis",
+    "seeMoreMandis": "See More Mandis",
+    "chooseMandi": "Select",
+    "selected": "Selected"
+  },
+  
+  "steps": {
+    "nextStepTitle": "Next Steps",
+    "step1": "Select Mandi",
+    "step2": "Arrange Transport",
+    "step3": "Sell at Mandi",
+    "step4": "Receive Payment",
+    "quote": "Right Information, Right Decision = Higher Profits, Happy Farmer!"
+  },
+  
+  "details": {
+    "title": "Mandi Deep Analysis",
+    "financialBreakdown": "Itemized Cost & Profit Breakdown",
+    "mandiPrice": "Mandi Rate",
+    "grossRevenue": "Gross Revenue",
+    "itemizedCosts": "Selling Costs Breakdown",
+    "labourCost": "Labour / Hamali",
+    "mandiFee": "Mandi Tax / Cess",
+    "packaging": "Packaging & Gunny Bags",
+    "wastage": "Expected Sorting / Wastage",
+    "storage": "Storage / Holding Fee",
+    "totalCost": "Total Estimated Costs",
+    "netProfit": "Net Return (Take Home)",
+    "timings": "Operating Hours",
+    "verifiedTraders": "Verified Commission Agents & Buyers",
+    "contactTrader": "Contact Verified Trader",
+    "getDirections": "Get GPS Directions",
+    "bookTransport": "Book Affordable Logistics"
+  }
+}
