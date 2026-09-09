@@ -5,8 +5,16 @@ import AppShell from '../components/AppShell';
 import AIRecommendation from '../components/AIRecommendation';
 import MandiCard from '../components/MandiCard';
 import { CropImage } from '../components/illustrations/CropIllustrations';
-import { FarmerAvatar } from '../components/illustrations/OnboardingIllustrations';
-import { ChevronLeft, ChevronDown, Store, Truck, IndianRupee, Wheat, CheckCircle2 } from 'lucide-react';
+import {
+  ChevronLeft,
+  Coins,
+  TrendingUp,
+  MapPin,
+  Sparkles,
+  Truck,
+  Scale,
+  ShieldCheck,
+} from 'lucide-react';
 
 export default function MarketAnalysis() {
   const {
@@ -29,6 +37,16 @@ export default function MarketAnalysis() {
   };
 
   const displayedMandis = showAllMandis ? otherMandis : otherMandis.slice(0, 4);
+
+  // 4–6 Key KrishiSetu Advantages (Requirements 16 & 17)
+  const advantages = [
+    { icon: <Coins className="w-4 h-4 text-emerald-700" />, label: t('advantages.betterPrice') },
+    { icon: <TrendingUp className="w-4 h-4 text-emerald-700" />, label: t('advantages.higherNetReturn') },
+    { icon: <MapPin className="w-4 h-4 text-emerald-700" />, label: t('advantages.nearbyMarkets') },
+    { icon: <Sparkles className="w-4 h-4 text-emerald-700" />, label: t('advantages.aiAnalysis') },
+    { icon: <Truck className="w-4 h-4 text-emerald-700" />, label: t('advantages.transportEstimate') },
+    { icon: <Scale className="w-4 h-4 text-emerald-700" />, label: t('advantages.marketComparison') },
+  ];
 
   return (
     <AppShell showHeader={true} showBackground={true} maxWidth="max-w-5xl">
@@ -63,7 +81,7 @@ export default function MarketAnalysis() {
 
         {/* Two-Column Responsive Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-          {/* Left Column: AI Prediction (Matches Image 2 Screen 11) */}
+          {/* Left Column: AI Prediction (Requirement 18: Preserved) */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-2 mb-1">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-ping" />
@@ -78,7 +96,7 @@ export default function MarketAnalysis() {
             />
           </div>
 
-          {/* Right Column: Other Nearby Mandis (Matches Image 2 Screen 12) */}
+          {/* Right Column: Other Nearby Mandis (Requirement 18: Preserved) */}
           <div className="lg:col-span-7 space-y-3">
             <div className="flex items-center justify-between mb-1">
               <h2 className="text-sm sm:text-base font-extrabold text-gray-900 flex items-center gap-1.5">
@@ -117,49 +135,28 @@ export default function MarketAnalysis() {
           </div>
         </div>
 
-        {/* Bottom Workflow & Happy Farmer Banner (Matches Image 2 Screen 11/12 Footer) */}
-        <div className="mt-8 pt-6 border-t border-emerald-100">
-          <div className="mb-3 text-left">
-            <span className="text-xs font-extrabold text-gray-500 uppercase tracking-wider">
-              {t('steps.nextStepTitle')}
+        {/* BOTTOM SECTION: Horizontal KrishiSetu Advantages Strip (Requirements 16 & 17) */}
+        <div className="mt-8 pt-5 border-t border-emerald-100/90">
+          <div className="flex items-center justify-between mb-2 px-1">
+            <span className="text-[11px] font-extrabold text-gray-500 uppercase tracking-wider flex items-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
+              {t('advantages.title')}
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
-            {/* 4-Step Pipeline Flow */}
-            <div className="md:col-span-7 bg-white rounded-2xl p-3 sm:p-4 border border-gray-100 shadow-sm">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
-                <div className="p-2 rounded-xl bg-emerald-50/60 border border-emerald-100 flex flex-col items-center">
-                  <span className="text-lg mb-1">🏪</span>
-                  <span className="font-extrabold text-gray-900 leading-tight">1. {t('steps.step1')}</span>
+          {/* Horizontally Scrollable Compact Advantages Strip */}
+          <div className="flex items-center gap-2.5 overflow-x-auto pb-2 no-scrollbar scroll-smooth">
+            {advantages.map((adv, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-2 bg-white px-3.5 py-2.5 rounded-2xl border border-emerald-100 shadow-soft text-xs font-bold text-gray-800 flex-shrink-0 hover:border-emerald-400 hover:bg-emerald-50/40 transition-all select-none"
+              >
+                <div className="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center flex-shrink-0">
+                  {adv.icon}
                 </div>
-                <div className="p-2 rounded-xl bg-gray-50 flex flex-col items-center">
-                  <span className="text-lg mb-1">🚚</span>
-                  <span className="font-semibold text-gray-700 leading-tight">2. {t('steps.step2')}</span>
-                </div>
-                <div className="p-2 rounded-xl bg-gray-50 flex flex-col items-center">
-                  <span className="text-lg mb-1">🌾</span>
-                  <span className="font-semibold text-gray-700 leading-tight">3. {t('steps.step3')}</span>
-                </div>
-                <div className="p-2 rounded-xl bg-gray-50 flex flex-col items-center">
-                  <span className="text-lg mb-1">💵</span>
-                  <span className="font-semibold text-gray-700 leading-tight">4. {t('steps.step4')}</span>
-                </div>
+                <span className="whitespace-nowrap">{adv.label}</span>
               </div>
-            </div>
-
-            {/* Farmer Quote Green Card (Matches Image 2) */}
-            <div className="md:col-span-5 bg-[#1B5E20] text-white rounded-2xl p-4 shadow-card flex items-center justify-between gap-3">
-              <div className="text-left">
-                <p className="text-xs sm:text-sm font-extrabold leading-snug">
-                  {t('steps.quote')}
-                </p>
-                <span className="text-[10px] text-emerald-200 block mt-1">
-                  KrishiSetu AI Market Engine
-                </span>
-              </div>
-              <FarmerAvatar className="w-14 h-14 flex-shrink-0" />
-            </div>
+            ))}
           </div>
         </div>
       </div>

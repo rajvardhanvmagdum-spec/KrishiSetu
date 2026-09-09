@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useApp } from '../context/AppContext';
 import { useI18n } from '../context/I18nContext';
 import { LOCATIONS } from '../data/locations';
-import { MapPin, SlidersHorizontal, ChevronDown, ChevronUp } from 'lucide-react';
+import { MapPin, Sliders, ChevronDown } from 'lucide-react';
 
 export default function LocationFilter() {
-  const { location, setLocation, showToast } = useApp();
+  const { location, setLocation } = useApp();
   const { t, language } = useI18n();
-  const [isExpanded, setIsExpanded] = useState(false);
 
   const selectedStateObj = LOCATIONS.find((l) => l.state === location.state) || LOCATIONS[0];
-  const selectedDistrictObj =
-    selectedStateObj.districts.find((d) => d.id === location.district) ||
-    selectedStateObj.districts[0];
 
   const handleStateChange = (e) => {
     const newState = e.target.value;
@@ -41,110 +37,104 @@ export default function LocationFilter() {
     setLocation((prev) => ({ ...prev, radiusKm: radius }));
   };
 
-  const districtDisplayName =
-    language === 'hi' || language === 'mr'
-      ? selectedDistrictObj.nameHindi
-      : selectedDistrictObj.name;
-  const stateDisplayName =
-    language === 'hi' || language === 'mr'
-      ? selectedStateObj.stateHindi
-      : selectedStateObj.state;
-
   return (
     <div className="w-full px-4 mb-3">
-      <div className="bg-white/90 backdrop-blur-sm border border-emerald-100 rounded-2xl p-3 shadow-soft transition-all">
-        {/* Compact Bar Header */}
-        <div
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center justify-between cursor-pointer select-none"
-        >
-          <div className="flex items-center gap-2 text-xs font-semibold text-gray-800">
-            <div className="w-7 h-7 rounded-full bg-emerald-100/80 flex items-center justify-center text-emerald-800">
-              <MapPin className="w-3.5 h-3.5" />
+      {/* Directly Visible Location & Radius Card (Requirement 3) */}
+      <div className="bg-white rounded-3xl p-4 sm:p-5 shadow-card border border-emerald-100/90 space-y-3.5">
+        {/* Header Label: State → District → Radius */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-700">
+              <MapPin className="w-4 h-4 text-emerald-600" />
             </div>
-            <span className="font-bold text-gray-900">
-              {districtDisplayName}, {stateDisplayName}
-            </span>
-            <span className="text-gray-300">•</span>
-            <span className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full text-[11px] font-bold">
-              {location.radiusKm} {t('location.km')}
-            </span>
+            <h3 className="font-bold text-gray-900 text-sm sm:text-base">
+              {t('location.selectRegion')}
+            </h3>
           </div>
 
-          <div className="flex items-center gap-1 text-xs font-medium text-emerald-700">
-            <span className="hidden sm:inline">{isExpanded ? 'कम करें' : t('home.locationBar')}</span>
-            {isExpanded ? (
-              <ChevronUp className="w-4 h-4" />
-            ) : (
-              <ChevronDown className="w-4 h-4" />
-            )}
+          {/* Quick Indicator Badge */}
+          <div className="bg-emerald-50 border border-emerald-200 text-[#1E5128] text-[11px] font-extrabold px-2.5 py-1 rounded-full flex items-center gap-1">
+            <span>{location.state}</span>
+            <span>→</span>
+            <span>{location.districtName}</span>
+            <span>•</span>
+            <span>{location.radiusKm} km</span>
           </div>
         </div>
 
-        {/* Collapsible Full Controls */}
-        {isExpanded && (
-          <div className="mt-3 pt-3 border-t border-gray-100 space-y-3 animate-fade-in">
-            <div className="grid grid-cols-2 gap-2.5">
-              {/* State Selector */}
-              <div>
-                <label className="block text-[11px] font-semibold text-gray-500 mb-1">
-                  {t('location.state')}
-                </label>
-                <select
-                  value={location.state}
-                  onChange={handleStateChange}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-2.5 py-1.5 text-xs font-semibold text-gray-800 focus:outline-none focus:border-emerald-600"
-                >
-                  {LOCATIONS.map((loc) => (
-                    <option key={loc.state} value={loc.state}>
-                      {language === 'hi' || language === 'mr' ? loc.stateHindi : loc.state}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* District Selector */}
-              <div>
-                <label className="block text-[11px] font-semibold text-gray-500 mb-1">
-                  {t('location.district')}
-                </label>
-                <select
-                  value={location.district}
-                  onChange={handleDistrictChange}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-2.5 py-1.5 text-xs font-semibold text-gray-800 focus:outline-none focus:border-emerald-600"
-                >
-                  {selectedStateObj.districts.map((dist) => (
-                    <option key={dist.id} value={dist.id}>
-                      {language === 'hi' || language === 'mr' ? dist.nameHindi : dist.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {/* Radius Slider */}
-            <div>
-              <div className="flex items-center justify-between text-xs mb-1">
-                <span className="font-semibold text-gray-600">{t('location.radius')}</span>
-                <span className="font-bold text-emerald-800">{location.radiusKm} km</span>
-              </div>
-              <input
-                type="range"
-                min="10"
-                max="300"
-                step="10"
-                value={location.radiusKm}
-                onChange={handleRadiusChange}
-                className="w-full h-2 bg-emerald-100 rounded-lg appearance-none cursor-pointer accent-emerald-700"
-              />
-              <div className="flex justify-between text-[10px] text-gray-400 mt-1">
-                <span>10 km</span>
-                <span>120 km (अनुशंसित)</span>
-                <span>300 km</span>
-              </div>
+        {/* State and District Dropdowns Directly Visible */}
+        <div className="grid grid-cols-2 gap-2.5">
+          {/* State Dropdown */}
+          <div>
+            <label className="block text-[11px] font-bold text-gray-600 mb-1">
+              {t('location.state')}
+            </label>
+            <div className="relative">
+              <select
+                value={location.state}
+                onChange={handleStateChange}
+                className="w-full appearance-none bg-gray-50 hover:bg-gray-100/80 border border-gray-200 rounded-xl px-3 py-2 pr-8 text-xs font-bold text-gray-800 focus:outline-none focus:border-emerald-600 cursor-pointer shadow-inner"
+              >
+                {LOCATIONS.map((loc) => (
+                  <option key={loc.state} value={loc.state}>
+                    {language === 'hi' || language === 'mr' ? loc.stateHindi : loc.state}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="w-3.5 h-3.5 text-gray-500 pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2" />
             </div>
           </div>
-        )}
+
+          {/* District Dropdown */}
+          <div>
+            <label className="block text-[11px] font-bold text-gray-600 mb-1">
+              {t('location.district')}
+            </label>
+            <div className="relative">
+              <select
+                value={location.district}
+                onChange={handleDistrictChange}
+                className="w-full appearance-none bg-gray-50 hover:bg-gray-100/80 border border-gray-200 rounded-xl px-3 py-2 pr-8 text-xs font-bold text-gray-800 focus:outline-none focus:border-emerald-600 cursor-pointer shadow-inner"
+              >
+                {selectedStateObj.districts.map((dist) => (
+                  <option key={dist.id} value={dist.id}>
+                    {language === 'hi' || language === 'mr' ? dist.nameHindi : dist.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="w-3.5 h-3.5 text-gray-500 pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2" />
+            </div>
+          </div>
+        </div>
+
+        {/* Radius Slider Directly Visible */}
+        <div className="pt-1">
+          <div className="flex items-center justify-between text-xs mb-1.5">
+            <span className="font-bold text-gray-700 flex items-center gap-1">
+              <Sliders className="w-3.5 h-3.5 text-emerald-600" />
+              {t('location.radius')}
+            </span>
+            <span className="font-black text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-lg border border-emerald-200 text-xs">
+              {location.radiusKm} km
+            </span>
+          </div>
+
+          <input
+            type="range"
+            min="10"
+            max="300"
+            step="10"
+            value={location.radiusKm}
+            onChange={handleRadiusChange}
+            className="w-full h-2.5 bg-emerald-100 rounded-lg appearance-none cursor-pointer accent-[#20603D]"
+          />
+
+          <div className="flex justify-between text-[10px] font-semibold text-gray-400 mt-1">
+            <span>10 km</span>
+            <span className="text-[#20603D] font-bold">120 km (डिफ़ॉल्ट / Default)</span>
+            <span>300 km</span>
+          </div>
+        </div>
       </div>
     </div>
   );

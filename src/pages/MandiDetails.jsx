@@ -3,7 +3,7 @@ import { useApp } from '../context/AppContext';
 import { useI18n } from '../context/I18nContext';
 import AppShell from '../components/AppShell';
 import CostBreakdown from '../components/CostBreakdown';
-import { ChevronLeft, MapPin, Clock, ShieldCheck, PhoneCall, Navigation, Truck, Star } from 'lucide-react';
+import { ChevronLeft, MapPin, Clock, ShieldCheck, Navigation, Star, Store, Building2 } from 'lucide-react';
 
 export default function MandiDetails() {
   const { selectedMandiData, goBack, showToast } = useApp();
@@ -16,14 +16,12 @@ export default function MandiDetails() {
       ? selectedMandiData.mandiNameHindi
       : selectedMandiData.mandiName;
 
-  const handleAction = (type) => {
-    if (type === 'call') {
-      showToast('सत्यापित आढ़ती से संपर्क जोड़ा जा रहा है: +91 98230 XXXXX', 'info');
-    } else if (type === 'gps') {
-      showToast(`${displayName} का GPS मार्ग गूगल मैप्स में खोला जा रहा है`, 'info');
-    } else if (type === 'transport') {
-      showToast('सस्ता पिकअप वाहन बुक करने की सुविधा जल्द शुरू होगी!', 'success');
-    }
+  const handleOpenMandiGps = () => {
+    // Requirement 15: Open selected mandi's actual location using mandi coordinates
+    const lat = selectedMandiData.lat || 18.4967;
+    const lng = selectedMandiData.lng || 73.8643;
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+    window.open(mapsUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -52,15 +50,22 @@ export default function MandiDetails() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xl">🏪</span>
-                <h1 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
-                  {displayName}
-                </h1>
+                <span className="text-2xl">🏪</span>
+                <div>
+                  <h1 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
+                    {displayName}
+                  </h1>
+                  <span className="text-xs font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md inline-block mt-0.5">
+                    {selectedMandiData.marketType}
+                  </span>
+                </div>
               </div>
 
-              <div className="flex items-center gap-1 text-xs text-gray-500 font-medium mt-1">
+              <div className="flex items-center gap-1 text-xs text-gray-500 font-medium mt-2">
                 <MapPin className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                 <span>{selectedMandiData.location}</span>
+                <span className="text-gray-300">•</span>
+                <span className="font-bold text-gray-700">{selectedMandiData.distanceKm} km</span>
               </div>
             </div>
 
@@ -77,44 +82,26 @@ export default function MandiDetails() {
             </div>
             <div className="flex items-center gap-1.5 text-emerald-800 font-bold">
               <ShieldCheck className="w-4 h-4 text-[#2E7D32]" />
-              <span>{selectedMandiData.traderCount}+ आढ़ती व खरीदार</span>
+              <span>{selectedMandiData.traderCount}+ आढ़ती व व्यापारी</span>
             </div>
             <div className="text-gray-600 font-medium hidden sm:block">
-              श्रेणी: {selectedMandiData.marketType}
+              दूरी: {selectedMandiData.distanceKm} km
             </div>
           </div>
         </div>
 
-        {/* Financial Calculation Breakdown Waterfall */}
+        {/* Financial Calculation Breakdown Waterfall (Mandi price, Gross, Selling costs, Net return) */}
         <CostBreakdown mandiData={selectedMandiData} />
 
-        {/* Farmer Action Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
+        {/* Requirement 14 & 15: Removed Buyer Contact & Vehicle options. Retained Mandi GPS button. */}
+        <div className="mt-5">
           <button
             type="button"
-            onClick={() => handleAction('call')}
-            className="py-3.5 px-4 bg-[#20603D] hover:bg-[#1B5E20] text-white font-bold text-xs sm:text-sm rounded-2xl shadow-md flex items-center justify-center gap-2 transition-all active:scale-95"
+            onClick={handleOpenMandiGps}
+            className="w-full py-4 px-6 bg-[#20603D] hover:bg-[#1B5E20] text-white font-bold text-sm sm:text-base rounded-2xl shadow-cta flex items-center justify-center gap-2 transition-all active:scale-95"
           >
-            <PhoneCall className="w-4 h-4" />
-            <span>{t('details.contactTrader')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleAction('gps')}
-            className="py-3.5 px-4 bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-bold text-xs sm:text-sm rounded-2xl shadow-sm flex items-center justify-center gap-2 transition-all active:scale-95"
-          >
-            <Navigation className="w-4 h-4 text-emerald-700" />
-            <span>{t('details.getDirections')}</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleAction('transport')}
-            className="py-3.5 px-4 bg-[#EBF7EE] hover:bg-emerald-100 text-[#1B5E20] border border-[#C8E6C9] font-bold text-xs sm:text-sm rounded-2xl shadow-sm flex items-center justify-center gap-2 transition-all active:scale-95"
-          >
-            <Truck className="w-4 h-4 text-[#2E7D32]" />
-            <span>{t('details.bookTransport')}</span>
+            <Navigation className="w-5 h-5 text-emerald-300" />
+            <span>{t('details.mandiLocation')}</span>
           </button>
         </div>
       </div>

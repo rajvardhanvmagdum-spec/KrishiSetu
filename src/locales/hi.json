@@ -8,6 +8,8 @@
     "home": "होम",
     "marketAnalysis": "मार्केट एनालिसिस",
     "mandiDetails": "मंडी विवरण",
+    "buyerMarketplace": "खरीदार मार्केटप्लेस",
+    "buyerDetails": "खरीदार विवरण",
     "back": "वापस",
     "next": "आगे बढ़ें"
   },
@@ -66,7 +68,7 @@
     "heroTitle": "अपनी फसल चुनें",
     "heroSubtitle": "बेहतर भाव खोजें, अधिक कमाएँ",
     "farmerPill": "किसान (Farmer)",
-    "buyerPill": "खरीदार (Buyer/Wholesaler/Retailer)",
+    "buyerPill": "खरीदार / विक्रेता (Buyer)",
     "chooseCrop": "फसल चुनें",
     "swipeHint": "बाएं या दाएं स्वाइप करें",
     "chooseQuantity": "मात्रा चुनें",
@@ -77,7 +79,7 @@
     "unitTon": "टन (Ton)",
     "ctaAnalysis": "AI मार्केट एनालिसिस करें",
     "infoStrip": "AI आधारित विश्लेषण से पाएं सर्वोत्तम मंडी और अधिक लाभ",
-    "locationBar": "स्थान व दायरा बदलें"
+    "locationBar": "स्थान व दायरा"
   },
   
   "crops": {
@@ -114,6 +116,16 @@
     "selected": "चयनित"
   },
   
+  "advantages": {
+    "title": "कृषिसितु के मुख्य लाभ",
+    "betterPrice": "बेहतर भाव (Better Price)",
+    "higherNetReturn": "अधिक नेट रिटर्न (Higher Net Return)",
+    "nearbyMarkets": "नजदीकी मंडियां (Nearby Markets)",
+    "aiAnalysis": "AI एनालिसिस (AI Analysis)",
+    "transportEstimate": "परिवहन अनुमान (Transport Estimate)",
+    "marketComparison": "बाजार तुलना (Market Comparison)"
+  },
+  
   "steps": {
     "nextStepTitle": "अगला कदम",
     "step1": "मंडी चुनें",
@@ -130,7 +142,7 @@
     "grossRevenue": "सकल राजस्व (Gross Revenue)",
     "itemizedCosts": "विक्रय लागत विवरण (Selling Costs)",
     "labourCost": "हमाली / मजदूरी",
-    "mandiFee": "मंडी टैक्स / सेस",
+    "mandiFee": "मंडी शुल्क / सेस",
     "packaging": "पैकेजिंग और बारदाना",
     "wastage": "अनुमानित छंटाई / नुकसान",
     "storage": "मंडी भंडारण शुल्क",
@@ -138,8 +150,30 @@
     "netProfit": "शुद्ध लाभ (Net Return)",
     "timings": "मंडी संचालन समय",
     "verifiedTraders": "सत्यापित आढ़ती व खरीदार",
-    "contactTrader": "व्यापारी से संपर्क करें",
     "getDirections": "रास्ता देखें (GPS)",
-    "bookTransport": "सस्ता वाहन बुक करें"
+    "mandiLocation": "मंडी का लोकेशन (GPS)"
+  },
+
+  "marketplace": {
+    "title": "खरीदार मार्केटप्लेस (Buyer Marketplace)",
+    "subtitle": "सीधे सत्यापित खरीदारों को अपनी फसल बेचें",
+    "buyersFound": "{{count}} खरीदार उपलब्ध",
+    "sortedByPrice": "अधिकतम भाव पहले (Highest Price First)",
+    "offeredPrice": "ऑफर किया गया भाव",
+    "requiredQuantity": "मांग (Required)",
+    "distance": "दूरी",
+    "apply": "आवेदन करें (Apply)",
+    "applied": "आवेदन भेजा गया",
+    "appliedSuccess": "Application sent successfully (आवेदन सफलतापूर्वक भेजा गया)",
+    "noBuyersTitle": "No buyers found within your selected radius.",
+    "noBuyersDesc": "आपके चुने गए {{radius}} km दायरे में '{{crop}}' के लिए कोई खरीदार उपलब्ध नहीं है। कृपया दायरा बढ़ाएं या अन्य फसल चुनें।",
+    "increaseRadius": "दायरा बढ़ाएं",
+    "contactBuyer": "व्यापारी से संपर्क करें",
+    "viewBuyerLocation": "खरीदार का स्थान देखें (GPS)",
+    "totalAmount": "TOTAL AMOUNT (प्राप्त होने वाली कुल राशि)",
+    "totalCalculation": "{{qty}} kg × ₹{{price}}/kg",
+    "paymentTerms": "भुगतान शर्तें",
+    "verifiedBuyer": "सत्यापित खरीदार",
+    "dealOverview": "सौदा और मूल्य विवरण"
   }
 }

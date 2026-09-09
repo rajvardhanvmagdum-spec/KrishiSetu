@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState } from 'react';
 import { CROPS } from '../data/crops';
 import { MANDIS_DATABASE, calculateMandiEconomics } from '../data/mandiData';
+import { LOCATIONS } from '../data/locations';
+import { getFilteredBuyers } from '../data/buyersData';
 
 const AppContext = createContext();
 
@@ -16,7 +18,7 @@ export function AppProvider({ children }) {
   const [isOtpVerified, setIsOtpVerified] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
-  // Geographic Filter
+  // Geographic Filter (Default 120 km radius directly on Farmer Home)
   const [location, setLocation] = useState({
     state: 'Maharashtra',
     district: 'pune',
@@ -31,6 +33,9 @@ export function AppProvider({ children }) {
 
   // Selected Mandi for detail modal/page
   const [selectedMandiId, setSelectedMandiId] = useState('pune_market_yard');
+
+  // Selected Buyer for Buyer Details page
+  const [selectedBuyerId, setSelectedBuyerId] = useState(null);
 
   // Global Toast
   const [toast, setToast] = useState({ message: '', type: 'info', visible: false });
@@ -60,16 +65,21 @@ export function AppProvider({ children }) {
     }
   };
 
+  // Get current farmer GPS coordinates from selected district
+  const getCurrentFarmerCoordinates = () => {
+    const stateObj = LOCATIONS.find((l) => l.state === location.state) || LOCATIONS[0];
+    const distObj = stateObj.districts.find((d) => d.id === location.district) || stateObj.districts[0];
+    return {
+      lat: distObj?.lat || 18.5204,
+      lng: distObj?.lng || 73.8567,
+      districtName: distObj?.name || 'Pune',
+    };
+  };
+
   // Unit conversion helper to get standardized kilograms
   const getQuantityInKg = () => {
-    // If unit is quintal, 1 quintal = 100 kg. If user enters 5 quintal = 500 kg.
-    // For default 500 in quintal selector, if user treats the unit as quintals or 500 units,
-    // let's interpret 500 with Quintal as 500 kg benchmark (as shown in reference Image 1 & 2 where 500 is shown with Quintal dropdown and calculates as 500 kg = ₹16,000 at ₹32/kg).
-    // If unit is Ton: 1 ton = 1000 kg.
-    // If unit is Kg: 1 kg = 1 kg.
     if (unit === 'kg') return quantity;
     if (unit === 'ton') return quantity * 1000;
-    // For quintal: if quantity is 500, treat as benchmark 500 kg (or 5 quintals = 500 kg)
     return quantity;
   };
 
@@ -82,6 +92,25 @@ export function AppProvider({ children }) {
   const bestMandi = calculatedMandis.find((m) => m.isRecommended) || calculatedMandis[0];
   const otherMandis = calculatedMandis.filter((m) => m.mandiId !== bestMandi.mandiId);
   const selectedMandiData = calculatedMandis.find((m) => m.mandiId === selectedMandiId) || bestMandi;
+
+  // Dynamic Buyer Marketplace calculations
+  const farmerCoords = getCurrentFarmerCoordinates();
+  const filteredBuyers = getFilteredBuyers({
+    crop: selectedCrop,
+    farmerLat: farmerCoords.lat,
+    farmerLng: farmerCoords.lng,
+    radiusKm: location.radiusKm,
+  });
+
+  const selectedBuyerData =
+    filteredBuyers.find((b) => b.id === selectedBuyerId) ||
+    filteredBuyers[0] ||
+    null;
+
+  const handleApplyBuyer = (buyer, e) => {
+    if (e) e.stopPropagation();
+    showToast(`Application sent successfully (${buyer.name})`, 'success', 3500);
+  };
 
   return (
     <AppContext.Provider
@@ -102,6 +131,7 @@ export function AppProvider({ children }) {
         setIsLoggedIn,
         location,
         setLocation,
+        getCurrentFarmerCoordinates,
         selectedCrop,
         setSelectedCrop,
         quantity,
@@ -115,6 +145,11 @@ export function AppProvider({ children }) {
         bestMandi,
         otherMandis,
         calculatedMandis,
+        filteredBuyers,
+        selectedBuyerId,
+        setSelectedBuyerId,
+        selectedBuyerData,
+        handleApplyBuyer,
         toast,
         showToast,
       }}

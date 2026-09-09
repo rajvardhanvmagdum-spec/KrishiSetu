@@ -8,6 +8,8 @@
     "home": "હોમ",
     "marketAnalysis": "માર્કેટ એનાલિસિસ",
     "mandiDetails": "માર્કેટ વિગતો",
+    "buyerMarketplace": "ખરીદનાર માર્કેટપ્લેસ",
+    "buyerDetails": "ખરીદનાર વિગતો",
     "back": "પાછા જાઓ",
     "next": "આગળ વધો"
   },
@@ -66,7 +68,7 @@
     "heroTitle": "તમારો પાક પસંદ કરો",
     "heroSubtitle": "શ્રેષ્ઠ ભાવ મેળવો, વધુ કમાઓ",
     "farmerPill": "ખેડૂત (Farmer)",
-    "buyerPill": "ખરીદનાર (Buyer/Wholesaler/Retailer)",
+    "buyerPill": "ખરીદનાર / વેચનાર (Buyer)",
     "chooseCrop": "પાક પસંદ કરો",
     "swipeHint": "ડાબે કે જમણે સ્વાઇપ કરો",
     "chooseQuantity": "જથ્થો પસંદ કરો",
@@ -77,7 +79,7 @@
     "unitTon": "ટન (Ton)",
     "ctaAnalysis": "AI માર્કેટ એનાલિસિસ કરો",
     "infoStrip": "AI વિશ્લેષણથી શ્રેષ્ઠ મંડી શોધો અને વધુ નફો મેળવો",
-    "locationBar": "સ્થાન અને ત્રિજ્યા બદલો"
+    "locationBar": "સ્થાન અને ત્રિજ્યા"
   },
   
   "crops": {
@@ -114,6 +116,16 @@
     "selected": "પસંદ કરેલ"
   },
   
+  "advantages": {
+    "title": "કૃષિસેતુના મુખ્ય ફાયદા",
+    "betterPrice": "શ્રેષ્ઠ ભાવ (Better Price)",
+    "higherNetReturn": "વધુ ચોખ્ખો નફો (Higher Net Return)",
+    "nearbyMarkets": "નજીકની મંડીઓ (Nearby Markets)",
+    "aiAnalysis": "AI વિશ્લેષણ (AI Analysis)",
+    "transportEstimate": "પરિવહન અંદાજ (Transport Estimate)",
+    "marketComparison": "બજાર સરખામણી (Market Comparison)"
+  },
+
   "steps": {
     "nextStepTitle": "આગળનું પગલું",
     "step1": "મંડી પસંદ કરો",
@@ -138,8 +150,30 @@
     "netProfit": "ચોખ્ખો નફો (Net Return)",
     "timings": "બજાર સમય",
     "verifiedTraders": "ચકાસાયેલ વેપારીઓ",
-    "contactTrader": "વેપારીનો સંપર્ક કરો",
     "getDirections": "નકશો જુઓ (GPS)",
-    "bookTransport": "વાહન બુક કરો"
+    "mandiLocation": "મંડી સ્થાન (GPS)"
+  },
+
+  "marketplace": {
+    "title": "ખરીદનાર માર્કેટપ્લેસ",
+    "subtitle": "ચકાસાયેલ ખરીદદારોને સીધો તમારો પાક વેચો",
+    "buyersFound": "{{count}} ખરીદદાર ઉપલબ્ધ",
+    "sortedByPrice": "મહત્તમ ભાવ પ્રથમ (Highest Price First)",
+    "offeredPrice": "ઓફર કરેલ ભાવ",
+    "requiredQuantity": "માંગ (Required)",
+    "distance": "અંતર",
+    "apply": "અરજી કરો (Apply)",
+    "applied": "અરજી સફળતાપૂર્વક મોકલાઈ",
+    "appliedSuccess": "Application sent successfully (અરજી સફળતાપૂર્વક મોકલાઈ)",
+    "noBuyersTitle": "No buyers found within your selected radius.",
+    "noBuyersDesc": "તમારા પસંદ કરેલા {{radius}} km ત્રિજ્યામાં '{{crop}}' માટે કોઈ ખરીદદાર નથી. કૃપા કરીને ત્રિજ્યા વધારો.",
+    "increaseRadius": "ત્રિજ્યા વધારો",
+    "contactBuyer": "વેપારીનો સંપર્ક કરો",
+    "viewBuyerLocation": "ખરીદનારનું સ્થાન જુઓ (GPS)",
+    "totalAmount": "TOTAL AMOUNT (મળવાપાત્ર કુલ રકમ)",
+    "totalCalculation": "{{qty}} kg × ₹{{price}}/kg",
+    "paymentTerms": "ચુકવણીની શરતો",
+    "verifiedBuyer": "ચકાસાયેલ ખરીદદાર",
+    "dealOverview": "ડીલ અને ભાવ વિગત"
   }
 }

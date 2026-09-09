@@ -8,6 +8,8 @@
     "home": "मुख्यपृष्ठ",
     "marketAnalysis": "मार्केट विश्लेषण",
     "mandiDetails": "बाजार समिती तपशील",
+    "buyerMarketplace": "खरेदीदार मार्केटप्लेस",
+    "buyerDetails": "खरेदीदार तपशील",
     "back": "मागे",
     "next": "पुढे जा"
   },
@@ -66,7 +68,7 @@
     "heroTitle": "आपले पीक निवडा",
     "heroSubtitle": "उत्तम दर मिळवा, अधिक कमवा",
     "farmerPill": "शेतकरी (Farmer)",
-    "buyerPill": "खरेदीदार (Buyer/Wholesaler/Retailer)",
+    "buyerPill": "खरेदीदार / विक्रेता (Buyer)",
     "chooseCrop": "पीक निवडा",
     "swipeHint": "डावीकडे किंवा उजवीकडे स्वाइप करा",
     "chooseQuantity": "प्रमाण निवडा",
@@ -77,7 +79,7 @@
     "unitTon": "टन (Ton)",
     "ctaAnalysis": "AI मार्केट विश्लेषण करा",
     "infoStrip": "AI आधारित विश्लेषणाने शोधा सर्वोत्तम बाजार समिती आणि मिळवा अधिक नफा",
-    "locationBar": "स्थान व परीघ बदला"
+    "locationBar": "स्थान व परीघ"
   },
   
   "crops": {
@@ -114,6 +116,16 @@
     "selected": "निवडलेले"
   },
   
+  "advantages": {
+    "title": "कृषिसितूचे मुख्य फायदे",
+    "betterPrice": "उत्तम दर (Better Price)",
+    "higherNetReturn": "अधिक निव्वळ नफा (Higher Net Return)",
+    "nearbyMarkets": "जवळील बाजारपेठा (Nearby Markets)",
+    "aiAnalysis": "AI विश्लेषण (AI Analysis)",
+    "transportEstimate": "वाहतूक अंदाज (Transport Estimate)",
+    "marketComparison": "बाजार तुलना (Market Comparison)"
+  },
+
   "steps": {
     "nextStepTitle": "पुढील पायरी",
     "step1": "बाजार समिती निवडा",
@@ -138,8 +150,30 @@
     "netProfit": "निव्वळ नफा (Net Return)",
     "timings": "बाजार वेळ",
     "verifiedTraders": "सत्यापित आडते व खरेदीदार",
-    "contactTrader": "व्यापाऱ्याशी संपर्क साधा",
     "getDirections": "दिशा मिळवा (GPS)",
-    "bookTransport": "वाहतूक गाडी बुक करा"
+    "mandiLocation": "बाजार समितीचे स्थान (GPS)"
+  },
+
+  "marketplace": {
+    "title": "खरेदीदार मार्केटप्लेस",
+    "subtitle": "सत्यापित खरेदीदारांना थेट आपला शेतमाल विका",
+    "buyersFound": "{{count}} खरेदीदार उपलब्ध",
+    "sortedByPrice": "जास्त दर आधी (Highest Price First)",
+    "offeredPrice": "दिलेला दर",
+    "requiredQuantity": "मागणी (Required)",
+    "distance": "अंतर",
+    "apply": "अर्ज करा (Apply)",
+    "applied": "अर्ज पाठवला",
+    "appliedSuccess": "Application sent successfully (अर्ज यशस्वीरित्या पाठवला)",
+    "noBuyersTitle": "No buyers found within your selected radius.",
+    "noBuyersDesc": "आपण निवडलेल्या {{radius}} किमी परिघात '{{crop}}' साठी खरेदीदार उपलब्ध नाही. कृपया परीघ वाढवा किंवा दुसरे पीक निवडा.",
+    "increaseRadius": "परीघ वाढवा",
+    "contactBuyer": "खरेदीदाराशी संपर्क साधा",
+    "viewBuyerLocation": "खरेदीदाराचे स्थान पहा (GPS)",
+    "totalAmount": "TOTAL AMOUNT (मिळणारी एकूण रक्कम)",
+    "totalCalculation": "{{qty}} kg × ₹{{price}}/kg",
+    "paymentTerms": "पेमेंट अटी",
+    "verifiedBuyer": "सत्यापित खरेदीदार",
+    "dealOverview": "सौदा आणि दर तपशील"
   }
 }

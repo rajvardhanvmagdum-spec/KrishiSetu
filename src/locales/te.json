@@ -8,6 +8,8 @@
     "home": "హోమ్",
     "marketAnalysis": "మార్కెట్ విశ్లేషణ",
     "mandiDetails": "మార్కెట్ వివరాలు",
+    "buyerMarketplace": "కొనుగోలుదారుల మార్కెట్‌ప్లేస్",
+    "buyerDetails": "కొనుగోలుదారు వివరాలు",
     "back": "వెనుకకు",
     "next": "ముందుకు సాగండి"
   },
@@ -66,7 +68,7 @@
     "heroTitle": "మీ పంటను ఎంచుకోండి",
     "heroSubtitle": "మంచి ధర పొందండి, ఎక్కువ సంపాదించండి",
     "farmerPill": "రైతు (Farmer)",
-    "buyerPill": "కొనుగోలుదారు (Buyer/Wholesaler/Retailer)",
+    "buyerPill": "కొనుగోలుదారు / విక్రేత (Buyer)",
     "chooseCrop": "పంటను ఎంచుకోండి",
     "swipeHint": "ఎడమ లేదా కుడికి స్వైప్ చేయండి",
     "chooseQuantity": "పరిమాణాన్ని ఎంచుకోండి",
@@ -77,7 +79,7 @@
     "unitTon": "టన్ను (Ton)",
     "ctaAnalysis": "AI మార్కెట్ విశ్లేషణ చేయండి",
     "infoStrip": "AI విశ్లేషణ ద్వారా ఉత్తమ మార్కెట్ కనుగొని గరిష్ట లాభం పొందండి",
-    "locationBar": "లొకేషన్ & పరిధిని మార్చండి"
+    "locationBar": "లొకేషన్ & పరిధి"
   },
   
   "crops": {
@@ -114,6 +116,16 @@
     "selected": "ఎంచుకోబడింది"
   },
   
+  "advantages": {
+    "title": "కృషిసేతు ముఖ్య ప్రయోజనాలు",
+    "betterPrice": "మంచి ధర (Better Price)",
+    "higherNetReturn": "ఎక్కువ నికర లాభం (Higher Net Return)",
+    "nearbyMarkets": "సమీప మార్కెట్లు (Nearby Markets)",
+    "aiAnalysis": "AI విశ్లేషణ (AI Analysis)",
+    "transportEstimate": "రవాణా అంచనా (Transport Estimate)",
+    "marketComparison": "మార్కెట్ పోలిక (Market Comparison)"
+  },
+
   "steps": {
     "nextStepTitle": "తదుపరి దశ",
     "step1": "మార్కెట్ ఎంచుకోండి",
@@ -138,8 +150,30 @@
     "netProfit": "నికర లాభం (Net Return)",
     "timings": "మార్కెట్ సమయాలు",
     "verifiedTraders": "ధృవీకరించబడిన వ్యాపారులు",
-    "contactTrader": "వ్యాపారితో మాట్లాడండి",
     "getDirections": "దారి కనుగొనండి (GPS)",
-    "bookTransport": "వాహనం బుక్ చేసుకోండి"
+    "mandiLocation": "మార్కెట్ లొకేషన్ (GPS)"
+  },
+
+  "marketplace": {
+    "title": "కొనుగోలుదారుల మార్కెట్‌ప్లేస్",
+    "subtitle": "ధృవీకరించబడిన కొనుగోలుదారులకు నేరుగా మీ పంటను అమ్మండి",
+    "buyersFound": "{{count}} కొనుగోలుదారులు అందుబాటులో ఉన్నారు",
+    "sortedByPrice": "అత్యధిక ధర మొదట (Highest Price First)",
+    "offeredPrice": "ఆఫర్ చేసిన ధర",
+    "requiredQuantity": "అవసరమైన పరిమాణం (Required)",
+    "distance": "దూరం",
+    "apply": "దరఖాస్తు చేసుకోండి (Apply)",
+    "applied": "దరఖాస్తు పంపబడింది",
+    "appliedSuccess": "Application sent successfully (దరఖాస్తు విజయవంతంగా పంపబడింది)",
+    "noBuyersTitle": "No buyers found within your selected radius.",
+    "noBuyersDesc": "మీరు ఎంచుకున్న {{radius}} కి.మీ పరిధిలో '{{crop}}' కోసం కొనుగోలుదారులు అందుబాటులో లేరు. దయచేసి శోధన పరిధిని పెంచండి.",
+    "increaseRadius": "పరిధిని పెంచండి",
+    "contactBuyer": "కొనుగోలుదారుని సంప్రదించండి",
+    "viewBuyerLocation": "కొనుగోలుదారు స్థానం చూడండి (GPS)",
+    "totalAmount": "TOTAL AMOUNT (మీకు అందే మొత్తం మొత్తం)",
+    "totalCalculation": "{{qty}} kg × ₹{{price}}/kg",
+    "paymentTerms": "చెల్లింపు నిబంధనలు",
+    "verifiedBuyer": "ధృవీకరించబడిన కొనుగోలుదారు",
+    "dealOverview": "డీల్ & ధర వివరాలు"
   }
 }

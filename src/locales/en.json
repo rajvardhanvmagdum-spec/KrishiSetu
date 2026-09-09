@@ -8,6 +8,8 @@
     "home": "Home",
     "marketAnalysis": "Market Analysis",
     "mandiDetails": "Mandi Details",
+    "buyerMarketplace": "Buyer Marketplace",
+    "buyerDetails": "Buyer Details",
     "back": "Back",
     "next": "Proceed"
   },
@@ -66,7 +68,7 @@
     "heroTitle": "Choose Your Crop",
     "heroSubtitle": "Find Better Prices, Earn More Profit",
     "farmerPill": "किसान (Farmer)",
-    "buyerPill": "खरीदार (Buyer/Wholesaler/Retailer)",
+    "buyerPill": "खरीदार / विक्रेता (Buyer)",
     "chooseCrop": "Choose Crop",
     "swipeHint": "Swipe left or right",
     "chooseQuantity": "Choose Quantity",
@@ -77,7 +79,7 @@
     "unitTon": "Metric Ton (टन)",
     "ctaAnalysis": "Run AI Market Analysis",
     "infoStrip": "AI-driven analysis helps you find the best mandi & maximize profit",
-    "locationBar": "Change Location & Radius"
+    "locationBar": "Location & Radius"
   },
   
   "crops": {
@@ -114,6 +116,16 @@
     "selected": "Selected"
   },
   
+  "advantages": {
+    "title": "Key Advantages of KrishiSetu",
+    "betterPrice": "Better Price",
+    "higherNetReturn": "Higher Net Return",
+    "nearbyMarkets": "Nearby Markets",
+    "aiAnalysis": "AI Analysis",
+    "transportEstimate": "Transport Estimate",
+    "marketComparison": "Market Comparison"
+  },
+
   "steps": {
     "nextStepTitle": "Next Steps",
     "step1": "Select Mandi",
@@ -138,8 +150,30 @@
     "netProfit": "Net Return (Take Home)",
     "timings": "Operating Hours",
     "verifiedTraders": "Verified Commission Agents & Buyers",
-    "contactTrader": "Contact Verified Trader",
     "getDirections": "Get GPS Directions",
-    "bookTransport": "Book Affordable Logistics"
+    "mandiLocation": "Mandi GPS Location"
+  },
+
+  "marketplace": {
+    "title": "Buyer Marketplace",
+    "subtitle": "Sell directly to verified institutional buyers & traders",
+    "buyersFound": "{{count}} Buyers Available",
+    "sortedByPrice": "Highest Price First",
+    "offeredPrice": "Offered Price",
+    "requiredQuantity": "Required Quantity",
+    "distance": "Distance",
+    "apply": "Apply",
+    "applied": "Applied Successfully",
+    "appliedSuccess": "Application sent successfully",
+    "noBuyersTitle": "No buyers found within your selected radius.",
+    "noBuyersDesc": "No buyers found within your selected {{radius}} km radius for '{{crop}}'. Try expanding your radius or selecting another crop.",
+    "increaseRadius": "Increase Radius",
+    "contactBuyer": "Contact Buyer",
+    "viewBuyerLocation": "View Buyer Location (GPS)",
+    "totalAmount": "TOTAL AMOUNT",
+    "totalCalculation": "{{qty}} kg × ₹{{price}}/kg",
+    "paymentTerms": "Payment Terms",
+    "verifiedBuyer": "Verified Buyer",
+    "dealOverview": "Deal & Pricing Overview"
   }
 }
