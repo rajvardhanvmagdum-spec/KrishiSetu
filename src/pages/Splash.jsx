@@ -3,7 +3,6 @@ import { useApp } from '../context/AppContext';
 import { useI18n } from '../context/I18nContext';
 import FarmlandIllustration from '../components/illustrations/FarmlandIllustration';
 import KrishiSetuLogo from '../components/illustrations/KrishiSetuLogo';
-import { ArrowRight } from 'lucide-react';
 
 export default function Splash() {
   const { navigateTo } = useApp();
@@ -51,17 +50,6 @@ export default function Splash() {
         </div>
       </div>
 
-      {/* Bottom Action Button */}
-      <div className="relative z-10 w-full max-w-sm pb-6">
-        <button
-          type="button"
-          onClick={() => navigateTo('language')}
-          className="w-full py-4 px-6 bg-[#20603D] hover:bg-[#1B5E20] active:scale-[0.99] text-white font-bold text-base rounded-2xl shadow-cta flex items-center justify-center gap-2 transition-all"
-        >
-          <span>शुरू करें / Get Started</span>
-          <ArrowRight className="w-5 h-5" />
-        </button>
-      </div>
     </div>
   );
 }

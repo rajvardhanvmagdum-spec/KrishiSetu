@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { useI18n } from '../context/I18nContext';
 import AppShell from '../components/AppShell';
-import { FarmerAvatar, BuyerAvatar } from '../components/illustrations/OnboardingIllustrations';
-import { ArrowRight, CheckCircle2, Sparkles, Store, UserCheck } from 'lucide-react';
+import kisanLogo from '../assets/kisan.png';
+import vyapariLogo from '../assets/vyapari.png';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function UserType() {
   const { userType, setUserType, navigateTo } = useApp();
@@ -48,7 +49,11 @@ export default function UserType() {
             >
               <div className="flex items-center gap-4">
                 <div className="relative">
-                  <FarmerAvatar className="w-20 h-20 drop-shadow-sm" />
+                  <img
+                    src={kisanLogo}
+                    alt="किसान"
+                    className="w-20 h-20 object-contain drop-shadow-sm"
+                  />
                   <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#2E7D32] text-white rounded-full flex items-center justify-center text-[10px] font-bold">
                     🌾
                   </span>
@@ -87,7 +92,11 @@ export default function UserType() {
             >
               <div className="flex items-center gap-4">
                 <div className="relative">
-                  <BuyerAvatar className="w-20 h-20 drop-shadow-sm" />
+                  <img
+                    src={vyapariLogo}
+                    alt="व्यापारी"
+                    className="w-20 h-20 object-contain drop-shadow-sm"
+                  />
                   <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-amber-600 text-white rounded-full flex items-center justify-center text-[10px] font-bold">
                     🏪
                   </span>

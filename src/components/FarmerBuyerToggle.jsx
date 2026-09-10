@@ -1,7 +1,8 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { useI18n } from '../context/I18nContext';
-import { Store, UserCheck } from 'lucide-react';
+import kisanLogo from '../assets/kisan.png';
+import vyapariLogo from '../assets/vyapari.png';
 
 export default function FarmerBuyerToggle() {
   const { userType, setUserType, navigateTo, currentScreen } = useApp();
@@ -36,7 +37,11 @@ export default function FarmerBuyerToggle() {
               : 'text-gray-600 hover:text-gray-900 hover:bg-white/40'
           }`}
         >
-          <UserCheck className="w-4 h-4" />
+          <img
+            src={kisanLogo}
+            alt="किसान"
+            className="w-5 h-5 object-contain flex-shrink-0"
+          />
           <span>{t('home.farmerPill')}</span>
         </button>
 
@@ -50,7 +55,11 @@ export default function FarmerBuyerToggle() {
               : 'text-gray-600 hover:text-gray-900 hover:bg-white/40'
           }`}
         >
-          <Store className="w-4 h-4" />
+          <img
+            src={vyapariLogo}
+            alt="व्यापारी"
+            className="w-5 h-5 object-contain flex-shrink-0"
+          />
           <span className="truncate">{t('home.buyerPill')}</span>
           <span className="text-[10px] px-1.5 py-0.2 bg-emerald-200 text-emerald-900 rounded font-bold ml-1">
             New
